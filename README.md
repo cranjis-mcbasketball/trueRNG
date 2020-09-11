@@ -1,12 +1,19 @@
+
+
+## Complete tasks 1-3 to activate live RNG data storage ##
+
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
 1. Run RNG .txt file writer:
 >python RNGActivateMultiV3
-
 
 2. Run server
 >python dev-server.py or python production-server.py
 
 3. Run git workflow automation
 >python commit.py
+
+## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## 
+
 
 4. Run tests:
 >pytest -v --cov
