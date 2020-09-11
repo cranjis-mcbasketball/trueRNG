@@ -13,7 +13,7 @@ def updateGithub():
         cmd.run("git push origin master", check=True, shell=True)
         now = datetime.now()
         print('completed commit: ', now)
-        time.sleep(20)
+        time.sleep(600)
 
 
 updateGithub()
