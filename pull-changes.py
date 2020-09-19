@@ -7,7 +7,7 @@ def pullGithubChanges():
     while True:
 
         cmd.run("git pull origin master", check=True, shell=True)
-        print('completed pull at ' + datetime.now())
+        print('completed pull')
         time.sleep(600)
 
 
