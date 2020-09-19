@@ -29,4 +29,4 @@ def index():
 
 
 if __name__ == "__main__":
-  app.run(host="ec2-52-53-209-36.us-west-1.compute.amazonaws.com", port=int("5001"))
+  app.run(host="ec2-13-57-25-129.us-west-1.compute.amazonaws.com", port=int("5001"))
