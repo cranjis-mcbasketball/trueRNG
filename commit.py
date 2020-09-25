@@ -6,7 +6,7 @@ commit_count = open('automation-test.txt', 'r')
 
 commit_count_lines = commit_count.readlines()
 print('commit_count_lines: %s' % commit_count_lines)
-n = commit_count_lines[len(commit_count_lines) - 1]
+n = commit_count_lines[0]
 print(n)
 
 
