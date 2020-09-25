@@ -16,7 +16,7 @@ def updateGithub():
         global n
         global_n = int(n) + 1
         print(n, global_n)
-        commit_cmd = "git commit -m 'NED_BYTES'" + n
+        commit_cmd = "git commit -m 'NED_BYTES'" + str(n)
         cmd.run(f"" + commit_cmd, check=True, shell=True)
         cmd.run("git push origin master", check=True, shell=True)
         now = datetime.now()
@@ -27,7 +27,7 @@ def updateGithub():
         commit_tracker = open('automation-test.txt', 'w')
         commit_tracker.write(n + '\n')
         commit_tracker.close()
-        n = int(n) + 1
+        n = global_n
         time.sleep(10)
 
 
