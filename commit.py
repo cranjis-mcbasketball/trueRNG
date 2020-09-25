@@ -25,9 +25,9 @@ def updateGithub():
         now = datetime.now()
         print('completed reset: ', now)
         commit_tracker = open('automation-test.txt', 'w')
-        commit_tracker.write(str(n) + '\n')
+        commit_tracker.write(n + '\n')
         commit_tracker.close()
-        n = n + 1
+        n = int(n) + 1
         time.sleep(10)
 
 
