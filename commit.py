@@ -12,7 +12,6 @@ def updateGithub():
         global_n = n + 1
         print(n, global_n)
         commit_cmd = "git commit -m 'NED_BYTES'" + str(n)
-        print(commit_cmd)
         cmd.run(f"" + commit_cmd, check=True, shell=True)
         cmd.run("git push origin master", check=True, shell=True)
         now = datetime.now()
@@ -20,9 +19,11 @@ def updateGithub():
         cmd.run("git reset --hard", check=True, shell=True)
         now = datetime.now()
         print('completed reset: ', now)
+        commit_tracker = open('automation-test.txt', 'w')
+        commit_tracker.write(str(n) + '\n')
+        commit_tracker.close()
         n = n + 1
         time.sleep(10)
-        print("%d squared is %d" % (10, 10*10))
 
 
 updateGithub()
