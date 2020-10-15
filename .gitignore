@@ -5,3 +5,5 @@ NED_DATA/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+
+s3_keys.py
