@@ -1,6 +1,7 @@
 # .txt files
 # *.txt
 NED_DATA/
+s3_archive/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
