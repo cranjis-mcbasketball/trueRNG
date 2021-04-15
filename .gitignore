@@ -6,5 +6,6 @@ s3_archive/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-
+/github
 s3_keys.py
+test_commit.py

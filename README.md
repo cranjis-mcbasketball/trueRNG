@@ -1,4 +1,4 @@
-## Complete tasks 1-6 to activate live RNG s3 cloud data storage
+## Complete tasks 1-4 to activate live RNG s3 cloud data storage
 
 ##
 
@@ -8,28 +8,15 @@
 
 2. Run RNG .txt file writer:
 
-   > python RNGActivateMultiV3
+   > python RNGActivateMultiV3.py
 
 3. Run server
 
    > python dev-server.py or python production-server.py
 
-4. To continuosly update s3 cloudstorage with new trueRNG data and delete old data
+4. To continuously update s3 cloudstorage with new trueRNG data and delete old data
 
    > python .s3/data_update.py
-
-## Automate git workflow (deprecated)
-
-1. Run git commit/push workflow automation in terminal of local repo
-
-   > python ./github/commit.py
-
-2. Run git pull workflow automation in terminal of deployed app
-
-   > python ./github/pull-changes.py
-
-3. Run tests:
-   > pytest -v --cov
 
 ##
 
